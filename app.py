@@ -11,7 +11,6 @@ try:
     model = load_model('model.h5', compile=False)
 except Exception as e:
     print("Error while loading model:", e)
-    # Add any fallback behavior if needed.
 
 # Load the encoders and scaler
 with open('label_encoder_gender.pkl', 'rb') as file:
